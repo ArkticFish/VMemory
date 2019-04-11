@@ -4,15 +4,12 @@ import { Globals } from './globals'
 
 @Component({
   selector: 'hello',
-  template: `<h1>Hello {{globals.role}}!</h1>`,
+  template: `<h1>{{globals.role}}!</h1>`,
   styles: [`h1 { font-family: Lato; }`]
 })
 export class HelloComponent  {
 
-  constructor(private globals: Globals)
-  {
-    
-  }
+  constructor(private globals: Globals) { }
 
   @Input() name: string;
 
