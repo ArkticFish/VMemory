@@ -10,6 +10,9 @@ import { Globals } from './globals'
 export class HelloComponent  {
 
   constructor(private globals: Globals)
+  {
+    
+  }
 
   @Input() name: string;
 
